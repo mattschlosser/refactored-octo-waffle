@@ -1,6 +1,6 @@
 # minimal reproduciton repo
 
-THis repo is not meant to be built/compiled in any way. Only to show an issue in VS Code.
+This repo is not meant to be built/compiled in any way. Only to show an issue in VS Code.
 
 ## See the issue your self
 
