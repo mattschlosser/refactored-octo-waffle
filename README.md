@@ -1,12 +1,12 @@
-# minimal reproduciton repo
+# minimal reproduction repo
 
-This repo is not meant to be built/compiled in any way. Only to show an issue in VS Code.
+This repo is not meant to be built/compiled in any way, only to show an issue in VS Code.
 
 ## See the issue your self
 
 1. Open `src/main.js` in VSCode (with all extensions disabled, even).
-2. Try to Ctrl + Click the diffrent imports
-3. Observe that non-ts/non-js aliased import does not support Ctrl + click to go to definition.
+2. Try to <kbd>Ctrl</kbd> + <kbd>Click</kbd> the diffrent imports
+3. Observe that non-ts/non-js aliased import does not support <kbd>Ctrl</kbd> + <kbd>Click</kbd> to go to definition.
 
 ## Issue
 
