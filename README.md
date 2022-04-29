@@ -1,24 +1,49 @@
-# test-app
+# minimal reproduciton repo
 
-## Project setup
+## Setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Issue
+
+In VS Code, since [the May 2021 relase](https://code.visualstudio.com/updates/v1_57#_go-to-definition-for-non-jsts-files), 
+when you import non-TS/non-JS files like so, you can use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to go to definition.
+
+```js
+import App from './App.vue'; // ctrl + click works
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+If you <kbd>Ctrl</kbd> + <kbd>Click</kbd> to go to the file, it works! 😃
+
+However, if you go to import using [a webpack alias](https://code.visualstudio.com/docs/languages/jsconfig#_using-webpack-aliases), it does not work. 
+
+```json
+// jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
 ```
 
-### Lints and fixes files
-```
-npm run lint
+```js
+// src/main.js
+import App from "@/App.vue"; // ctrl + click does not work
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+IN this case, you can't <kbd>Ctrl</kbd> + <kbd>Click</kbd> to go through to the defintion. 
+
+Imports of another .ts/.js file, however, does work:
+
+```js
+// src/main.js
+import router from "@/plugins/router.js" // ctrl + click works :)
+```
+
+This works, because of the `jsconfig.json` above. 
+
+
