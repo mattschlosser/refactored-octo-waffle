@@ -48,3 +48,5 @@ import router from "@/plugins/router.js" // ctrl + click works :)
 ```
 
 This works, because of the `jsconfig.json` above. 
+
+See [issue on vscode repo](https://github.com/microsoft/vscode/issues/148462)
