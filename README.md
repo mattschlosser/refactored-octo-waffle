@@ -2,7 +2,7 @@
 
 This repo is not meant to be built/compiled in any way, only to show an issue in VS Code.
 
-## See the issue your self
+## See the issue for your self
 
 1. Open `src/main.js` in VSCode (with all extensions disabled, even).
 2. Try to <kbd>Ctrl</kbd> + <kbd>Click</kbd> the diffrent imports
