@@ -1,15 +1,12 @@
 # minimal reproduciton repo
 
-## Setup
-```
-npm install
-```
+THis repo is not meant to be built/compiled in any way. Only to show an issue in VS Code.
 
 ## See the issue your self
 
-1. Open `src/main.js`
+1. Open `src/main.js` in VSCode (with all extensions disabled, even).
 2. Try to Ctrl + Click the diffrent imports
-3. Observe that non-ts/non-js aliased imports do not support Ctrl + click to go to definition.
+3. Observe that non-ts/non-js aliased import does not support Ctrl + click to go to definition.
 
 ## Issue
 
